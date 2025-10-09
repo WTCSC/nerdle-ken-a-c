@@ -1,64 +1,69 @@
-"""
-equation_generator.py
+import random
 
-This module generates random math equations for the Nerdle game.
-It creates valid equations in the format: number operator number = result
-For example: 12+34=46 or 8*7=56
-"""
+def generate_nerdle_equation():
+    while True:
+        op = random.choice(['+', '-', '*', '/'])
+        
+        if op == '+':
+            a = random.randint(10, 99)
+            b = random.randint(10, 99)
+            c = a + b
+            equation = f"{a}+{b}={c}"
+        elif op == '-':
+            a = random.randint(10, 99)
+            b = random.randint(10, a)  
+            c = a - b
+            equation = f"{a}-{b}={c}"
+        elif op == '*':
+            a = random.randint(1, 9)
+            b = random.randint(10, 99)
+            c = a * b
+            equation = f"{a}*{b}={c}"
+        elif op == '/':
+            b = random.randint(1, 9)
+            c = random.randint(10, 99)
+            a = b * c
+            equation = f"{a}/{b}={c}"
+        
+        if len(equation) == 8:
+            return equation
 
-########################################
-# TODO: Import the appropriate modules #
-########################################
+if __name__ == "__main__":
+    print(generate_nerdle_equation())
 
-###########################################
-# TODO: Implement the following functions #
-###########################################
 
 def generate_numbers_for_addition():
-    """
-    Generate two numbers that when added create an 8-character equation.
-    Returns a tuple of (num1, num2, result)
-    
-    For addition, we want numbers that create 8 total characters
-    Format: NN+NN=NN (2+1+2+1+2 = 8 characters)
-
-    Example: (12, 34, 46) creates "12+34=46"
-    """
+    while True:
+        num1 = random.randint(10, 99)
+        num2 = random.randint(10, 99)
+        result = num1 + num2
+        if 10 <= result <= 99:
+            return (num1, num2, result)
 
 def generate_numbers_for_subtraction():
-    """
-    Generate two numbers that when subtracted create an 8-character equation.
-    Returns a tuple of (num1, num2, result)
-    
-    For subtraction, we want positive results only
-    Format: NN-NN=NN (2+1+2+1+2 = 8 characters)
-
-    Example: (56, 23, 33) creates "56-23=33"
-    """
+    while True:
+        num1 = random.randint(10, 99)
+        num2 = random.randint(10, 99)
+        result = num1 - num2
+        if 10 <= result <= 99:
+            return (num1, num2, result)
 
 def generate_numbers_for_multiplication():
-    """
-    Generate two numbers that when multiplied create an 8-character equation.
-    Returns a tuple of (num1, num2, result)
-    
-    For multiplication, we need exactly 8 characters
-    Format: N*NN=NNN (1+1+2+1+3 = 8 characters)
-    Single digit * two digit = three digit result
-    
-    Example: (3, 34, 102) creates "3*34=102" (8 characters)
-    """
+    while True:
+        num1 = random.randint(10, 99)
+        num2 = random.randint(10, 99)
+        result = num1 * num2
+        if 10 <= result <= 99:
+            return (num1, num2, result)
 
 def generate_numbers_for_division():
-    """
-    Generate two numbers that when divided create an 8-character equation.
-    Returns a tuple of (num1, num2, result)
-    
-    For division, we want exact division (no remainders)
-    Format: NNN/NN=N (3+1+2+1+1 = 8 characters)
-    We need to work backwards: result * divisor = dividend
+    while True:
+        num1 = random.randint(10, 99)
+        num2 = random.randint(10, 99)
+        result = num1 - num2
+        if 10 <= result <= 99:
+            return (num1, num2, result)
 
-    Example: (252, 36, 7) creates "252/36=7"
-    """
     
 ################################################################################
 #  DO NOT EDIT BELOW THIS LINE, THESE FUNCTIONS ARE ALREADY COMPLETED FOR YOU  #
