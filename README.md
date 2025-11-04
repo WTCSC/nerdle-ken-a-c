@@ -1,13 +1,37 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Tm7PdKHd)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=20920976)
-<!-- 
-   Assignment Notes:
-   - To run the game, execute `python3 nerdle.py` in the terminal.
-   - Your task is to implement the equation generation functions in `equation_generator.py` and the solution validator in `game_engine.py`.
-   - Don't forget to import your modules.
-   - PAY ATTENTION TO THE TODO COMMENTS IN THE CODE.
-   - Each function has comments detailing its purpose and requirements.
-   - Code is automatically tested *every time* you push changes to GitHub.
--->
+# Nerdle - A Math Equation Guessing Game
 
-# Nerdle
+## Project Name & Description
+
+**Nerdle** is a terminal-based math game inspired by *Wordle*. Instead of guessing words, players try to guess an 8-character math equation (e.g., `12+34=46`) in 6 attempts. It provides immediate feedback on each guess, showing which characters are correct and in the right position (green), correct but in the wrong position (yellow), or incorrect (gray). Nerdle exists to make practicing arithmetic fun, interactive, and challenging, helping players improve their math skills while enjoying a puzzle-like game experience.
+
+## Requirements
+
+- Python 3.7 or higher  
+- No external libraries required (uses only built-in modules such as `random`)
+
+## Installation
+
+1. Clone the repository or download the project files:
+
+```bash
+git clone https://github.com/yourusername/nerdle.git
+cd nerdle
+```
+
+## Starting The Game
+
+Run the main program:
+python nerdle.py
+You will see a welcome message and instructions. The game will generate a random 8-character equation for you to guess.
+
+## How to Play
+
+Enter an 8-character guess following the rules.
+
+Receive feedback showing which characters are correct, misplaced, or absent.
+
+Continue guessing until you solve the equation or use all 6 attempts.
+
+At the end, the game will reveal the correct equation and ask if you want to play again.
+
+Nerdle is simple to run, requires no extra setup, and is a fun way to practice mental math while enjoying a puzzle-solving challenge.
