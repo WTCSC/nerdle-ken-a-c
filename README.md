@@ -21,17 +21,19 @@ cd nerdle
 ## Starting The Game
 
 Run the main program:
+
 python nerdle.py
+
 You will see a welcome message and instructions. The game will generate a random 8-character equation for you to guess.
 
 ## How to Play
 
-Enter an 8-character guess following the rules.
+1. Enter an 8-character guess following the rules.
 
-Receive feedback showing which characters are correct, misplaced, or absent.
+2. Receive feedback showing which characters are correct, misplaced, or absent.
 
-Continue guessing until you solve the equation or use all 6 attempts.
+3. Continue guessing until you solve the equation or use all 6 attempts.
 
-At the end, the game will reveal the correct equation and ask if you want to play again.
+4. At the end, the game will reveal the correct equation and ask if you want to play again.
 
 Nerdle is simple to run, requires no extra setup, and is a fun way to practice mental math while enjoying a puzzle-solving challenge.
