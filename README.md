@@ -35,3 +35,7 @@ You will see a welcome message and instructions. The game will generate a random
 4. At the end, the game will reveal the correct equation and ask if you want to play again.
 
 Nerdle is simple to run, requires no extra setup, and is a fun way to practice mental math while enjoying a puzzle-solving challenge.
+
+## Decision Tree
+
+<img width="567" height="302" alt="Screenshot 2025-11-03 174330" src="https://github.com/user-attachments/assets/651c9683-d7b6-49e3-8fe4-a98d9ac3690e" />
