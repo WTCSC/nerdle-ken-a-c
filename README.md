@@ -11,7 +11,7 @@
 
 ## Installation
 
-1. Clone the repository or download the project files:
+Clone the repository or download the project files:
 
 ```bash
 git clone https://github.com/yourusername/nerdle.git
@@ -20,9 +20,7 @@ cd nerdle
 
 ## Starting The Game
 
-Run the main program:
-
-python nerdle.py
+Run the main program: python nerdle.py
 
 You will see a welcome message and instructions. The game will generate a random 8-character equation for you to guess.
 
